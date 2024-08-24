@@ -1,38 +1,293 @@
-.App {
+.accordion {
+  --bs-accordion-btn-icon: url("./Assets/dropdown.png") !important;
+  --bs-accordion-btn-active-icon: url("./Assets/dropdown.png") !important;
+}
+
+@font-face {
+  font-family: "font1";
+  src: url("./Fonts/Fontspring-DEMO-altivo-black.otf") format("opentype");
+}
+
+.font1 {
+  font-family: "font1" !important;
+}
+
+@font-face {
+  font-family: "font2";
+  src: url("./Fonts/Fontspring-DEMO-altivo-blackitalic.otf") format("opentype");
+}
+
+.font2 {
+  font-family: "font2" !important;
+}
+
+@font-face {
+  font-family: "font3";
+  src: url("./Fonts/Fontspring-DEMO-altivo-bold.otf") format("opentype");
+}
+
+.font2 {
+  font-family: "font3" !important;
+}
+
+@font-face {
+  font-family: "font4";
+  src: url("./Fonts/Fontspring-DEMO-altivo-bolditalic.otf") format("opentype");
+}
+
+.font4 {
+  font-family: "font4" !important;
+}
+
+@font-face {
+  font-family: "font5";
+  src: url("./Fonts/Fontspring-DEMO-altivo-extralight.otf") format("opentype");
+}
+
+.font5 {
+  font-family: "font5" !important;
+}
+
+@font-face {
+  font-family: "font6";
+  src: url("./Fonts/Fontspring-DEMO-altivo-extralightitalic.otf")
+    format("opentype");
+}
+
+.font6 {
+  font-family: "font6" !important;
+}
+
+@font-face {
+  font-family: "font7";
+  src: url("./Fonts/Fontspring-DEMO-altivo-italic.otf") format("opentype");
+}
+
+.font7 {
+  font-family: "font7" !important;
+}
+
+@font-face {
+  font-family: "font8";
+  src: url("./Fonts/Fontspring-DEMO-altivo-light.otf") format("opentype");
+}
+
+.font8 {
+  font-family: "font8" !important;
+}
+
+@font-face {
+  font-family: "font9";
+  src: url("./Fonts/Fontspring-DEMO-altivo-lightitalic.otf") format("opentype");
+}
+
+.font9 {
+  font-family: "font9" !important;
+}
+
+@font-face {
+  font-family: "font10";
+  src: url("./Fonts/Fontspring-DEMO-altivo-medium.otf") format("opentype");
+}
+
+.font10 {
+  font-family: "font10" !important;
+}
+
+@font-face {
+  font-family: "font11";
+  src: url("./Fonts/Fontspring-DEMO-altivo-mediumitalic.otf") format("opentype");
+}
+
+.font11 {
+  font-family: "font11" !important;
+}
+
+@font-face {
+  font-family: "font12";
+  src: url("./Fonts/Fontspring-DEMO-altivo-regular.otf") format("opentype");
+}
+
+.font12 {
+  font-family: "font12" !important;
+}
+
+@font-face {
+  font-family: "font13";
+  src: url("./Fonts/Fontspring-DEMO-altivo-thin.otf") format("opentype");
+}
+
+.font13 {
+  font-family: "font13" !important;
+}
+
+@font-face {
+  font-family: "font14";
+  src: url("./Fonts/Fontspring-DEMO-altivo-thinitalic.otf") format("opentype");
+}
+
+.font14 {
+  font-family: "font14" !important;
+}
+
+@font-face {
+  font-family: "font15";
+  src: url("./Fonts/Fontspring-DEMO-altivo-ultra.otf") format("opentype");
+}
+
+.font15 {
+  font-family: "font15" !important;
+}
+
+@font-face {
+  font-family: "font16";
+  src: url("./Fonts/Fontspring-DEMO-altivo-ultraitalic.otf") format("opentype");
+}
+
+.font16 {
+  font-family: "font16" !important;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 1rem;
+}
+
+.banner-description {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backgroundImage {
+  background: black no-repeat fixed center;
+  background-image: url("./Assets/Background.png");
+  height: 550px;
+  width: 100%;
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+}
+
+.fs-my {
+  font-size: 12px;
+}
+
+.acc-item {
+  border: none !important;
+  font-weight: bold !important;
+}
+
+.accordion-item .accordion-header .accordion-button,
+.accordion-button .collapsed {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.accordion-button {
+  background-size: 1.25rem !important;
+  margin-right: auto !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  font-weight: bold !important;
+}
+
+.accordion-button::after {
+  position: absolute !important;
+  left: 1rem !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  position: absolute !important;
+  left: 1rem !important;
+}
+
+.accordion-item:last-child {
+  border-bottom: none !important;
+}
+
+.accordion-body {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.nav-background-blur {
+  backdrop-filter: blur(20px);
+}
+
+.styled-list {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  counter-reset: li;
+}
+
+.styled-list li {
+  position: relative;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-increment: li;
+}
+
+.styled-list li:before {
+  content: counter(li);
+  font-family: "font3" !important;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #a08e7d;
+  color: #a08e7d !important;
   text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  background-color: #000;
+  transform: translate(0, -50%);
+  z-index: 10;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.styled-list:after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 30px;
+  width: 1px;
+  height: 70%;
+  background-color: #a08e7d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.styled-list li:last-child:after {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pale-color {
+  color: #a08e7d !important;
 }
 
-.App-link {
-  color: #61dafb;
+.dull-color {
+  color: #b2b2b2 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.border-dull {
+  border-bottom: 0.2px solid #b2b2b2 !important;
+}
+
+.extrasmall {
+  font-size: 12px !important;
+}
+
+@media (max-width: 468px) {
+  .backgroundImage {
+    height: 400px !important;
   }
 }
